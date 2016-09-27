@@ -104,27 +104,41 @@
             <div class="col-lg-6  wow fadeInLeft">
                 <h1>MISIÓN</h1>
                 <p align='justify' style="color:#282828">
-                   El Área Metropolitana del Valle del Cacique Upar, concentrará sus esfuerzos en la planeación y coordinación del desarrollo sustentable y humano, soportado en el ordenamiento integral del territorio y en la prestación racional y eficiente de servicios públicos, para construir ciudades modernas para la paz, de convivencia social, innovadoras, de competitividad económica, con equilibrio ecológico a través de la gestión y ejecución de programas y proyectos de impacto metropolitano, edificando así una cultura de progreso en grado superior. 
+                   El Área Metropolitana del Valledupar, concentrará sus esfuerzos en la planeación y coordinación del desarrollo sustentable y humano, soportado en el ordenamiento integral del territorio y en la prestación racional y eficiente de servicios públicos, para construir ciudades modernas para la paz, de convivencia social, innovadoras, de competitividad económica, con equilibrio ecológico a través de la gestión y ejecución de programas y proyectos de impacto metropolitano, edificando así una cultura de progreso en grado superior. 
                 </p>
             </div>
-            <div class="col-lg-6 text-right m-t-n-lg wow zoomIn">
+            <div class="col-lg-6 text-right m-t-n-lg wow zoomIn" id="imagenes">
+              <div>
                 <img src="img/landing/monumento.jpg" class="img-responsive" alt="dashboard">
+            </div>  
+              <div>
+                <img src="img/landing/manaure.jpg" class="img-responsive" alt="dashboard">
             </div>
+              <div>
+                <img src="img/landing/sandiego.jpg" class="img-responsive" alt="dashboard">
+            </div> 
         </div>
         <div class="row">
-            <div class="col-lg-6 text-right m-t-n-lg wow zoomIn">
+            <div class="col-lg-6 text-right m-t-n-lg wow zoomIn" id="imagenes2">
+              <div>
                 <img src="img/landing/monumento2.jpg" class="img-responsive" alt="dashboard">
+              </div>
+              <div>
+                <img src="img/landing/paz.jpg" class="img-responsive" alt="dashboard">
+              </div>
+              <div>
+                <img src="img/landing/codazzi.jpg" class="img-responsive" alt="dashboard">
+              </div>
             </div>
             <div class="col-lg-6 text-right wow fadeInRight">
                 <h1>VISIÓN</h1>
                 <p align='justify' style="color:#282828">
-                    En el 2023, El Área Metropolitana del Valle del Cacique Upar, se habrá convertido en un territorio metropolitano sostenible e incluyente, con escenarios urbanos y rurales modelos en donde resultó posible consolidar la paz, con un ambiente de respeto y tolerancia, proveedor de bienes y servicios de calidad, que compite a nivel global como despensa agroalimentaria y destino turístico, a partir de valorar y potenciar su cultura vallenata, su patrimonio ambiental, étnico y agropecuario,  con un alto grado de valores y principios edificados sobre fundamentos inamovibles de transparencia, honestidad y rectitud, gracias a la implementación de la cultura ciudadana metropolitana, con un Sistema de Transporte y Movilidad urbano-regional eficiente y legalmente constituido,  que permite el aprovechamiento óptimo y adecuado de los espacios públicos como eje central de conciliación y cultura ciudadana, soportado en instituciones sólidas que garantizan el bienestar colectivo.  Seremos un Área Metropolitana de influencia nacional e internacional.
-
+                    En el 2023, El Área Metropolitana de valledupar, se habrá convertido en un territorio metropolitano sostenible e incluyente, con escenarios urbanos y rurales modelos en donde resultó posible consolidar la paz, con un ambiente de respeto y tolerancia, proveedor de bienes y servicios de calidad, que compite a nivel global como despensa agroalimentaria y destino turístico, a partir de valorar y potenciar su cultura vallenata, su patrimonio ambiental, étnico y agropecuario,  con un alto grado de valores y principios edificados sobre fundamentos inamovibles de transparencia, honestidad y rectitud, gracias a la implementación de la cultura ciudadana metropolitana, con un Sistema de Transporte y Movilidad urbano-regional eficiente y legalmente constituido,  que permite el aprovechamiento óptimo y adecuado de los espacios públicos como eje central de conciliación y cultura ciudadana, soportado en instituciones sólidas que garantizan el bienestar colectivo.  Seremos un Área Metropolitana de influencia nacional e internacional.
                 </p>
             </div>
         </div>
         </div>
-    </div>
+
 
 </section>
 <section id="contacto" class="gray-section contact" style="background-color: #ff2f35;">
@@ -204,6 +218,21 @@ PARA LA PAZ</p>
             }, 500);
             event.preventDefault();
         });
+        
+         $('#imagenes div:gt(0)').hide();
+                setInterval(function(){
+                  $('#imagenes div:first-child').fadeOut(0)
+                      .next('div').fadeIn(1000)
+                      .end().appendTo('#imagenes');
+                    }, 4000);
+                    
+                    $('#imagenes2 div:gt(0)').hide();
+                setInterval(function(){
+                  $('#imagenes2 div:first-child').fadeOut(0)
+                      .next('div').fadeIn(1000)
+                      .end().appendTo('#imagenes2');
+                    }, 4000);
+                   
     });
 
     var cbpAnimatedHeader = (function() {
