@@ -6619,6 +6619,9 @@ body.landing-page {
 .landing-page .header-back.two {
   background: url('../img/landing/header_two.jpg') 50% 0 no-repeat;
 }
+.landing-page .header-back.tree {
+  background: url('../img/landing/header_tree.jpg') 50% 0 no-repeat;
+}
 .landing-page .carousel {
   height: 500px;
 }
