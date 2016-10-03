@@ -6614,10 +6614,13 @@ body.landing-page {
   width: 100%;
 }
 .landing-page .header-back.one {
-  background: url('../img/landing/header_one.jpg') 50% 0 no-repeat;
+  background: url('../img/landing/header_one.JPG') 50% 0 no-repeat;
 }
 .landing-page .header-back.two {
   background: url('../img/landing/header_two.jpg') 50% 0 no-repeat;
+}
+.landing-page .header-back.tree {
+  background: url('../img/landing/header_tree.jpg') 50% 0 no-repeat;
 }
 .landing-page .carousel {
   height: 500px;
