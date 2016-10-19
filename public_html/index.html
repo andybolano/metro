@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
       <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+      <link href="js/plugins/crosscover/css/crosscover.css" rel="stylesheet" type="text/css"/>
+      <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet" type="text/css"/>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -23,216 +25,43 @@
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
 </head>
-<body id="home" class="landing-page">
-<div class="navbar-wrapper">
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header page-scroll">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand page-scroll" href="#home"><img src="img/landing/logo_simple.png" style="height:46px;"></a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a class="page-scroll" href="#home">Home</a></li>
-                        <li><a class="page-scroll" href="#conocenos">Conocenos</a></li>
-                        <li><a class="page-scroll" href="#contacto">Contacto</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+<body id="home" class="landing-page"  ng-app="app">
+
+<div ng-view=""  class="">
+
 </div>
-<div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#inSlider" data-slide-to="0" class="active"></li>
-        <li data-target="#inSlider" data-slide-to="1"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <div class="container">
-                <div class="carousel-caption animated bounceInLeft">
-                    <h1>Ciudades Modernas,<br/>
-                        para la PAZ</h1>
-                    <p>Planeación y coordinación del desarrollo sustentable y humano.</p>
-                </div>
-                <div class="carousel-image animated bounceIn">
-                    <img src="img/landing/logo.png" alt="laptop"/>
-                </div>
-            </div>
-            <!-- Set background for slide in css -->
-            <div class="header-back one"></div>
-
-        </div>
-        <div class="item">
-            <div class="container">
-               <div class="carousel-caption animated bounceInLeft">
-                    <h1>Ciudades Modernas,<br/>
-                        para la PAZ</h1>
-                    <p>Planeación y coordinación del desarrollo sustentable y humano.</p>
-               </div>
-                 <div class="carousel-image animated bounceIn">
-                    <img src="img/landing/laptop.png" alt="laptop"/>
-                </div>
-            </div>
-            <!-- Set background for slide in css -->
-            <div class="header-back two"></div>
-        </div>
-      <div class="item">
-            <div class="container">
-               <div class="carousel-caption animated bounceInLeft">
-           
-               </div>
-               
-            </div>
-            <!-- Set background for slide in css -->
-            <div class="header-back tree"></div>
-        </div>
-    </div>
-    <a class="left carousel-control" href="#inSlider" role="button" data-slide="prev" style="margin-top:12%">
-            <i class=" material-icons " style="font-size:100px;">chevron_left</i>  
-    </a>
-    <a class="right carousel-control" href="#inSlider" role="button" data-slide="next" style="margin-top:12%">
-        <i class=" material-icons "  style="font-size:100px;">chevron_right</i>
-    </a>
-</div>
-<section class="features" id="conocenos">
-    <div class="container" style="margin-top:50px;">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <div class="navy-line"></div>
-                <h1>Te presentamos nuestros ideales</h1>
-                <p style="color:#ec3237">Nuestra razon de ser y nuestro futuro</p>
-            </div>
-        </div>
-        <br>
-        <br>
-        <div class="row">
-            <div class="col-lg-6  wow fadeInLeft">
-                <h1>MISIÓN</h1>
-                <p align='justify' style="color:#282828">
-                   El Área Metropolitana del Valledupar, concentrará sus esfuerzos en la planeación y coordinación del desarrollo sustentable y humano, soportado en el ordenamiento integral del territorio y en la prestación racional y eficiente de servicios públicos, para construir ciudades modernas para la paz, de convivencia social, innovadoras, de competitividad económica, con equilibrio ecológico a través de la gestión y ejecución de programas y proyectos de impacto metropolitano, edificando así una cultura de progreso en grado superior. 
-                </p>
-            </div>
-            <div class="col-lg-6 text-right m-t-n-lg wow zoomIn" id="imagenes">
-              <div class="animated bounceInRight">
-                <img src="img/landing/monumento.jpg" class="img-responsive" alt="dashboard">
-            </div>  
-              <div class="animated bounceInRight">
-                <img src="img/landing/manaure.jpg" class="img-responsive" alt="dashboard">
-            </div>
-              <div class="animated bounceInRight">
-                <img src="img/landing/sandiego.jpg" class="img-responsive" alt="dashboard">
-            </div> 
-        </div>
-        <div class="row">
-            <div class="col-lg-6 text-right m-t-n-lg wow zoomIn" id="imagenes2">
-              <div  class="animated bounceInLeft">
-                <img src="img/landing/monumento2.jpg" class="img-responsive" alt="dashboard">
-              </div>
-              <div class="animated bounceInLeft">
-                <img src="img/landing/paz.jpg" class="img-responsive" alt="dashboard">
-              </div>
-              <div class="animated bounceInLeft">
-                <img src="img/landing/codazzi.jpg" class="img-responsive" alt="dashboard">
-              </div>
-            </div>
-            <div class="col-lg-6 text-right wow fadeInRight">
-                <h1>VISIÓN</h1>
-                <p align='justify' style="color:#282828">
-                    En el 2023, El Área Metropolitana de valledupar, se habrá convertido en un territorio metropolitano sostenible e incluyente, con escenarios urbanos y rurales modelos en donde resultó posible consolidar la paz, con un ambiente de respeto y tolerancia, proveedor de bienes y servicios de calidad, que compite a nivel global como despensa agroalimentaria y destino turístico, a partir de valorar y potenciar su cultura vallenata, su patrimonio ambiental, étnico y agropecuario,  con un alto grado de valores y principios edificados sobre fundamentos inamovibles de transparencia, honestidad y rectitud, gracias a la implementación de la cultura ciudadana metropolitana, con un Sistema de Transporte y Movilidad urbano-regional eficiente y legalmente constituido,  que permite el aprovechamiento óptimo y adecuado de los espacios públicos como eje central de conciliación y cultura ciudadana, soportado en instituciones sólidas que garantizan el bienestar colectivo.  Seremos un Área Metropolitana de influencia nacional e internacional.
-                </p>
-            </div>
-        </div>
-        </div>
-
-
-</section>
-<section id="redes" class="gray-section">
-    <br>
-     <div class="container">
-            <div class="row">
-            <div class="col-lg-4">
-                                <a class="twitter-timeline"  href="https://twitter.com/search?q=%40areametroVDPR" data-widget-id="782396257293795329">Tweets sobre @areametroVDPR</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          
-            </div>   
-                <div class="col-lg-4">
-                    <div class="fb-page" data-href="https://www.facebook.com/Area-Metropolitana-De-Valledupar-916400491823737/?fref=ts" data-tabs="timeline" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Area-Metropolitana-De-Valledupar-916400491823737/?fref=ts" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Area-Metropolitana-De-Valledupar-916400491823737/?fref=ts">Area Metropolitana De Valledupar</a></blockquote></div>
-                </div>  
-                <div class="col-lg-4">
-                    
-                </div>
-        </div> 
-     </div>
-    <br>
-</section>    
-<section id="contacto"  style="background-color: #ff2f35;">
-    <div class="container">
-        <div class="row m-b-lg">
-            <div class="col-lg-12 text-center">
-                <div class="navy-line"></div>
-                <h1 style="color:#FFF">Contactanos</h1>
-                <p style="color:#FFF">Estaremos atentos para responder tus inquietudes</p>
-            </div>
-        </div>
-        <div class="row m-b-lg">
-            <div class="col-lg-12 text-center">
-                <address style="color:#FFF;font-size: 16px;">
-                    <strong><span class="navy" style="color:#000">Área metropolitana de Valledupar.</span></strong><br/>
-                    <abbr title="Phone" style="color:#FFF">Tel: </abbr>+57 304 641 0657<br>
-                    <abbr title="Email" style="color:#FFF">Email: </abbr>asaade.director@metropoliupargov.co
-                </address>
-            </div>
-            <div class="col-lg-4">
-                <p class="text-color">
-                    
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-              
-                <p class="m-t-sm" style="color:#FFF">
-                    Encuentranos es nuestras redes sociales
-                </p>
-                <ul class="list-inline social-icon">
-                    <li><a href="https://twitter.com/areametroVDPR"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li><a href="https://www.facebook.com/CAMARABOGOTA?fref=ts"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li><a href="https://www.instagram.com/alfredo_saade/"><i class="fa fa-instagram"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg" >
-                <p><strong style="color:#000">&copy; 2016 Área metropolitana de Valledupar.</strong><br/><p style="color:#FFF">CIUDADES MODERNAS,
-PARA LA PAZ</p>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- Mainly scripts -->
 <script src="js/jquery-2.1.1.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
 <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-
+<script src="js/angular/angular.min.js" type="text/javascript"></script>
+<script src="js/angular/angular-route.js" type="text/javascript"></script>
+<script src="script/app.js" type="text/javascript"></script>
 <!-- Custom and plugin javascript -->
 <script src="js/inspinia.js"></script>
 <script src="js/plugins/pace/pace.min.js"></script>
+<script src="js/plugins/toastr/toastr.min.js" type="text/javascript"></script>
 <script src="js/plugins/wow/wow.min.js"></script>
-
-
+<script src="js/plugins/crosscover/js/crosscover.min.js" type="text/javascript"></script>
+<script src="script/controllers/home.js" type="text/javascript"></script>
+<script src="script/controllers/login.js" type="text/javascript"></script>
 <script>
-
+function active(id){
+  
+    for(i=1; i<=3; i++){
+             $('#'+i).removeClass("active");
+             if(i==id){
+                 $('#'+i).addClass("active");
+                 break;
+             }
+         }
+              
+   }
+   
     $(document).ready(function () {
+        
+         
 
         $('body').scrollspy({
             target: '.navbar-fixed-top',
@@ -240,13 +69,6 @@ PARA LA PAZ</p>
         });
 
         // Page scrolling feature
-        $('a.page-scroll').bind('click', function(event) {
-            var link = $(this);
-            $('html, body').stop().animate({
-                scrollTop: $(link.attr('href')).offset().top - 50
-            }, 500);
-            event.preventDefault();
-        });
         
          $('#imagenes div:gt(0)').hide();
                 setInterval(function(){
@@ -266,7 +88,7 @@ PARA LA PAZ</p>
 
     var cbpAnimatedHeader = (function() {
         var docElem = document.documentElement,
-                header = document.querySelector( '.navbar-default' ),
+                header = document.querySelector('#cabecera'),
                 didScroll = false,
                 changeHeaderOn = 200;
         function init() {
@@ -278,12 +100,13 @@ PARA LA PAZ</p>
             }, false );
         }
         function scrollPage() {
+            console.log(header)
             var sy = scrollY();
             if ( sy >= changeHeaderOn ) {
-                $(header).addClass('navbar-scroll')
+                $('#cabecera').addClass('navbar-scroll')
             }
             else {
-                $(header).removeClass('navbar-scroll')
+                $('#cabecera').removeClass('navbar-scroll')
             }
             didScroll = false;
         }
@@ -297,16 +120,26 @@ PARA LA PAZ</p>
     // Activate WOW.js plugin for animation on scrol
     new WOW().init();
 
+toastr.options = {
+  "closeButton": false,
+  "debug": false,
+  "newestOnTop": false,
+  "progressBar": false,
+  "positionClass": "toast-top-right",
+  "preventDuplicates": false,
+  "onclick": null,
+  "showDuration": "300",
+  "hideDuration": "1000",
+  "timeOut": "5000",
+  "extendedTimeOut": "1000",
+  "showEasing": "swing",
+  "hideEasing": "linear",
+  "showMethod": "fadeIn",
+  "hideMethod": "fadeOut"
+}
 </script>
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=156628517774852";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+
 
 </body>
 

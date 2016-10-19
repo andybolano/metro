@@ -6891,8 +6891,8 @@ body.landing-page {
   color: #fff;
 }
 .landing-page .btn-primary {
-  background-color: #1ab394;
-  border-color: #1ab394;
+  background-color: #FF2E34;
+  border-color: #FF2E34;
   color: #FFFFFF;
   font-size: 14px;
   padding: 10px 20px;
@@ -6903,8 +6903,8 @@ body.landing-page {
 .landing-page .btn-primary:active,
 .landing-page .btn-primary.active,
 .landing-page .open .dropdown-toggle.btn-primary {
-  background-color: #179d82;
-  border-color: #179d82;
+  background-color: #be1c20;
+  border-color: #be1c20;
   color: #FFFFFF;
 }
 .landing-page .btn-primary:active,
