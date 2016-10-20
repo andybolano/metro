@@ -17,3 +17,4 @@ Route::get('/', function () {
 
 include 'Routes/Usuarios.php';
 include 'Routes/Slider.php';
+include 'Routes/Documentos.php';

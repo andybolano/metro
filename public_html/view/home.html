@@ -1,4 +1,4 @@
-<div ng-controller="homeCtrl">
+<div ng-controller="homeCtrl" ng-init="getDocumentos();">
 <div class="navbar-wrapper">
         <nav id="cabecera" class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
@@ -15,6 +15,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a class="page-scroll" id="#home" href="javascript:;" onclick="move(this.id)">Home</a></li>
                         <li><a class="page-scroll" id="#conocenos" href="javascript:;" onclick="move(this.id)">Conocenos</a></li>
+                        <li><a class="page-scroll" id="#documentos" href="javascript:;" onclick="move(this.id)">Documentos</a></li>
                         <li><a class="page-scroll" id="#contacto" href="javascript:;" onclick="move(this.id)">Contacto</a></li>
                         <li><a class="page-scroll" href="#/login">Login</a></li>
                     </ul>
@@ -128,6 +129,7 @@
 
 
 </section>
+   
 <section id="redes" class="gray-section">
     <br>
      <div class="container">
@@ -155,7 +157,41 @@
         </div> 
      </div>
     <br>
-</section>    
+</section> 
+    <section class="features" id="documentos">
+    <div class="container" style="margin-top:50px;">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="navy-line"></div>
+                <h1>DOCUMENTACIÓN</h1>
+                <p style="color:#ec3237">Normatividades, leyes y Acuerdos Metropolitanos</p>
+            </div>
+            
+            <table class="table table-bordered">
+                        <thead>
+                            <th>Titulo</th>
+                            <th>Descripción</th>
+                            <th style="text-align: center;">Visualizar</th>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="item in Documentos">
+                                 <td>{{item.titulo}}</td>
+                                <td>{{item.descripcion}}</td>
+                                <td style="text-align: center;"><a href="{{item.url}}" target="_blank"><i class="fa fa-eye" style="font-size:16px;"></i></a></td>
+                            
+                            </tr>
+                        </tbody>
+                    </table>
+            
+        </div>
+        <br>
+        <br>
+        <div class="row">
+           
+        </div>
+
+
+</section>
 <section id="contacto"  style="background-color: #ff2f35;">
     <div class="container">
         
